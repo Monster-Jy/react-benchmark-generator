@@ -145,7 +145,7 @@ function generateIndex(directory, components) {
   const exportName = randomWords(1, 3).map(capitalize).join('') + (mt_id++);
   const root = generateComponent(exportName, true, justTheNames, justTheNames.length);
 
-  fs.writeFileSync(path.join(directory, 'index.jsx'), [imports.join('\n'), root].join('\n\n'));
+  fs.writeFileSync(path.join(directory, 'index.js'), [imports.join('\n'), root].join('\n\n'));
   return exportName;
 }
 

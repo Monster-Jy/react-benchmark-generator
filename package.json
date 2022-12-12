@@ -1,7 +1,43 @@
 {
   "name": "react-benchmark-generator",
   "version": "0.3.0",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js"
+  },
   "dependencies": {
-    "faker": "^5.5.3"
+    "babel-loader": "^8.2.3",
+    "compression-webpack-plugin": "^9.2.0",
+    "css-loader": "^6.5.1",
+    "css-minimizer-webpack-plugin": "^3.3.1",
+    "faker": "^5.5.3",
+    "less-loader": "^10.2.0",
+    "mini-css-extract-plugin": "^2.5.0",
+    "postcss-loader": "^6.2.1",
+    "ts-loader": "^9.2.6",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.16.8",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/runtime": "^7.17.2",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
+    "copy-webpack-plugin": "^10.2.0",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "5.5.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "speed-measure-webpack-plugin": "^1.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "5.61.0",
+    "webpack-bundle-analyzer": "^4.6.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "4.2.1",
+    "webpack-merge": "^5.8.0",
+    "postcss-normalize": "^10.0.1",
+    "postcss-preset-env": "^7.2.3",
+    "cssnano": "^5.0.15"
   }
 }
